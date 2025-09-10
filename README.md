@@ -93,21 +93,21 @@ AiPHP 框架1.0 是为实用主义者准备的。为那些受够了AI的不确�
 ## 开发约定（必读）
 
 ### 编程工具规则
-.codebuddy
-.codebuddy\.rules
-.augment
-.augment\rules
-.augment\rules\imported
-.comate
-.cursor
-.cursor\rules
-.gemin
-.kiro
-.kiro\steering
-.qoder
-.qoder\rules
-.trae
-.trae\rules
+- .codebuddy
+- .codebuddy\.rules
+- .augment
+- .augment\rules
+- .augment\rules\imported
+- .comate
+- .cursor
+- .cursor\rules
+- .gemin
+- .kiro
+- .kiro\steering
+- .qoder
+- .qoder\rules
+- .trae
+- .trae\rules
 常用的Ai编程工具的规则文件都已经放好,只需要在对应的编程工具指定即可.
 
 ### 基础文档规范
