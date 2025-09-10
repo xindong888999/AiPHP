@@ -1,9 +1,9 @@
-# AiPHP 框架1.0
 
 <div align="center">
   <h2>AiPHP 框架1.0: The Unframework for the AI Era</h2>
   <p><strong>核心标语：Code in Plain Language. Get Perfect PHP.</strong></p>
-  <p>（用自然语言编码，获得完美的PHP。）</p>
+  <p>（用自然语言编码，获得完美的PHP。）</p> 
+  <p>（全球第一个全面支持Ai编程的PHP框架）</p>
 </div>
 
 ---
