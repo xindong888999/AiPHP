@@ -1,0 +1,145 @@
+/* AiPHP框架新闻页面样式 */
+
+/* 新闻页面整体样式 */
+.news-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* 新闻标题区域样式 */
+.news-header {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #40916c;
+    padding-bottom: 1rem;
+}
+
+.news-header h1 {
+    font-size: 2.5rem;
+    color: #2d6a4f;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.news-meta {
+    display: flex;
+    gap: 1.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.news-date, .news-category {
+    display: inline-flex;
+    align-items: center;
+}
+
+.news-date::before {
+    content: '📅';
+    margin-right: 0.5rem;
+}
+
+.news-category::before {
+    content: '🏷️';
+    margin-right: 0.5rem;
+}
+
+/* 新闻内容区域样式 */
+.news-content {
+    line-height: 1.6;
+}
+
+.news-image {
+    margin-bottom: 2rem;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.news-article {
+    margin-bottom: 2rem;
+}
+
+.news-article p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.news-article h2 {
+    font-size: 1.8rem;
+    color: #2d6a4f;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* 相关新闻区域样式 */
+.news-related {
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.news-related h3 {
+    font-size: 1.4rem;
+    color: #2d6a4f;
+    margin-bottom: 1rem;
+}
+
+.news-related ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news-related li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.news-related li::before {
+    content: '➤';
+    color: #40916c;
+    position: absolute;
+    left: 0;
+}
+
+.news-related a {
+    color: #2d6a4f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.news-related a:hover {
+    color: #40916c;
+    text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .news-header h1 {
+        font-size: 2rem;
+    }
+    
+    .news-article p {
+        font-size: 1rem;
+    }
+    
+    .news-article h2 {
+        font-size: 1.5rem;
+    }
+}

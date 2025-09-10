@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 内部服务器错误</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #dc3545;
+            border-bottom: 2px solid #dc3545;
+            padding-bottom: 10px;
+        }
+        .error-details {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 20px 0;
+            white-space: pre-wrap;
+            font-family: monospace;
+        }
+        .solution {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .back-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>500 内部服务器错误</h1>
+        <p>抱歉，服务器遇到了一个内部错误，无法完成您的请求。</p>
+        
+        <div class="error-details">
+            <strong>错误详情:</strong>
+            <br><br>
+            错误类型: Internal Server Error
+            <br>
+            错误时间: <script>document.write(new Date().toLocaleString());</script>
+            <br><br>
+            如果您是网站开发者，请检查以下内容：
+            <ul>
+                <li>查看服务器错误日志获取详细信息</li>
+                <li>检查PHP错误日志</li>
+                <li>确认数据库连接是否正常</li>
+                <li>检查是否有语法错误或致命错误</li>
+                <li>确认文件权限设置是否正确</li>
+            </ul>
+        </div>
+        
+        <div class="solution">
+            <strong>解决方案:</strong>
+            <ul>
+                <li>刷新页面，看问题是否仍然存在</li>
+                <li>联系网站管理员报告此问题</li>
+                <li>如果您是管理员，请检查服务器日志获取更多详细信息</li>
+            </ul>
+        </div>
+        
+        <a href="/" class="back-link">返回首页</a>
+    </div>
+</body>
+</html>

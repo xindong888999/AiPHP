@@ -1,0 +1,364 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <!-- 背景 - 天安门广场 -->
+  <rect width="800" height="450" fill="#e6e6e6"/>
+  
+  <!-- 天空 -->
+  <rect width="800" height="150" fill="#87ceeb"/>
+  
+  <!-- 天安门 -->
+  <rect x="200" y="100" width="400" height="200" fill="#b22222"/>
+  <rect x="250" y="120" width="300" height="160" fill="#8b0000"/>
+  
+  <!-- 天安门城楼 -->
+  <rect x="300" y="80" width="200" height="40" fill="#8b0000"/>
+  <rect x="320" y="60" width="160" height="20" fill="#8b0000"/>
+  
+  <!-- 毛主席像 -->
+  <circle cx="400" cy="160" r="30" fill="#ffdbac"/>
+  <rect x="385" y="140" width="30" height="30" fill="#000000"/>
+  
+  <!-- 广场 -->
+  <rect x="0" y="300" width="800" height="150" fill="#808080"/>
+  
+  <!-- 士兵方阵 - 第一排 -->
+  <g transform="translate(100, 320)">
+    <rect width="600" height="2" fill="#333"/>
+    <!-- 士兵 -->
+    <g transform="translate(0, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(30, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(60, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(90, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(120, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(150, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(180, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(210, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(240, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(270, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(300, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(330, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(360, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(390, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(420, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(450, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(480, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(510, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(540, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(570, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+  </g>
+  
+  <!-- 士兵方阵 - 第二排 -->
+  <g transform="translate(100, 350)">
+    <rect width="600" height="2" fill="#333"/>
+    <!-- 士兵 -->
+    <g transform="translate(0, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(30, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(60, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(90, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(120, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(150, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(180, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(210, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(240, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(270, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(300, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(330, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(360, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(390, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(420, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(450, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(480, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(510, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(540, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(570, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+  </g>
+  
+  <!-- 士兵方阵 - 第三排 -->
+  <g transform="translate(100, 380)">
+    <rect width="600" height="2" fill="#333"/>
+    <!-- 士兵 -->
+    <g transform="translate(0, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(30, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(60, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(90, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(120, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(150, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(180, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(210, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(240, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(270, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(300, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(330, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(360, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(390, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(420, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(450, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(480, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(510, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(540, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+    <g transform="translate(570, 0)">
+      <circle cx="10" cy="10" r="5" fill="#006400"/>
+      <rect x="8" y="15" width="4" height="10" fill="#006400"/>
+    </g>
+  </g>
+  
+  <!-- 坦克 -->
+  <g transform="translate(150, 410)">
+    <rect x="0" y="0" width="50" height="20" fill="#556b2f"/>
+    <rect x="10" y="-10" width="30" height="10" fill="#556b2f"/>
+    <circle cx="10" cy="20" r="5" fill="#333"/>
+    <circle cx="20" cy="20" r="5" fill="#333"/>
+    <circle cx="30" cy="20" r="5" fill="#333"/>
+    <circle cx="40" cy="20" r="5" fill="#333"/>
+  </g>
+  
+  <g transform="translate(250, 410)">
+    <rect x="0" y="0" width="50" height="20" fill="#556b2f"/>
+    <rect x="10" y="-10" width="30" height="10" fill="#556b2f"/>
+    <circle cx="10" cy="20" r="5" fill="#333"/>
+    <circle cx="20" cy="20" r="5" fill="#333"/>
+    <circle cx="30" cy="20" r="5" fill="#333"/>
+    <circle cx="40" cy="20" r="5" fill="#333"/>
+  </g>
+  
+  <g transform="translate(350, 410)">
+    <rect x="0" y="0" width="50" height="20" fill="#556b2f"/>
+    <rect x="10" y="-10" width="30" height="10" fill="#556b2f"/>
+    <circle cx="10" cy="20" r="5" fill="#333"/>
+    <circle cx="20" cy="20" r="5" fill="#333"/>
+    <circle cx="30" cy="20" r="5" fill="#333"/>
+    <circle cx="40" cy="20" r="5" fill="#333"/>
+  </g>
+  
+  <g transform="translate(450, 410)">
+    <rect x="0" y="0" width="50" height="20" fill="#556b2f"/>
+    <rect x="10" y="-10" width="30" height="10" fill="#556b2f"/>
+    <circle cx="10" cy="20" r="5" fill="#333"/>
+    <circle cx="20" cy="20" r="5" fill="#333"/>
+    <circle cx="30" cy="20" r="5" fill="#333"/>
+    <circle cx="40" cy="20" r="5" fill="#333"/>
+  </g>
+  
+  <g transform="translate(550, 410)">
+    <rect x="0" y="0" width="50" height="20" fill="#556b2f"/>
+    <rect x="10" y="-10" width="30" height="10" fill="#556b2f"/>
+    <circle cx="10" cy="20" r="5" fill="#333"/>
+    <circle cx="20" cy="20" r="5" fill="#333"/>
+    <circle cx="30" cy="20" r="5" fill="#333"/>
+    <circle cx="40" cy="20" r="5" fill="#333"/>
+  </g>
+  
+  <!-- 飞机 -->
+  <g transform="translate(100, 50)">
+    <path d="M10,0 L20,10 L30,10 L40,0 L30,5 L20,5 L10,0" fill="#a9a9a9"/>
+  </g>
+  
+  <g transform="translate(200, 70)">
+    <path d="M10,0 L20,10 L30,10 L40,0 L30,5 L20,5 L10,0" fill="#a9a9a9"/>
+  </g>
+  
+  <g transform="translate(300, 40)">
+    <path d="M10,0 L20,10 L30,10 L40,0 L30,5 L20,5 L10,0" fill="#a9a9a9"/>
+  </g>
+  
+  <g transform="translate(400, 60)">
+    <path d="M10,0 L20,10 L30,10 L40,0 L30,5 L20,5 L10,0" fill="#a9a9a9"/>
+  </g>
+  
+  <g transform="translate(500, 30)">
+    <path d="M10,0 L20,10 L30,10 L40,0 L30,5 L20,5 L10,0" fill="#a9a9a9"/>
+  </g>
+  
+  <g transform="translate(600, 50)">
+    <path d="M10,0 L20,10 L30,10 L40,0 L30,5 L20,5 L10,0" fill="#a9a9a9"/>
+  </g>
+  
+  <!-- 国旗 -->
+  <g transform="translate(380, 120)">
+    <rect x="0" y="0" width="40" height="30" fill="#de2910"/>
+    <circle cx="10" cy="5" r="3" fill="#ffde00"/>
+    <circle cx="15" cy="10" r="1" fill="#ffde00"/>
+    <circle cx="18" cy="5" r="1" fill="#ffde00"/>
+    <circle cx="15" cy="2" r="1" fill="#ffde00"/>
+    <circle cx="12" cy="5" r="1" fill="#ffde00"/>
+  </g>
+  
+  <!-- 文字 -->
+  <text x="400" y="30" font-family="Arial" font-size="16" text-anchor="middle" fill="#000">中国9.3阅兵式</text>
+</svg>

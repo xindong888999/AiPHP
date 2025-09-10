@@ -1,0 +1,134 @@
+/* 文章列表页面样式 */
+.article-list {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.page-header h1 {
+    color: #2d6a4f;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.articles-container {
+    margin-bottom: 40px;
+}
+
+.article-item {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.article-item:hover {
+    background-color: #f0fff4;
+    border-color: #40916c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(64, 145, 108, 0.1);
+}
+
+.article-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.article-title {
+    color: #2d6a4f;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.article-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.article-status {
+    background-color: #40916c;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.no-articles {
+    text-align: center;
+    padding: 60px 20px;
+    color: #6b7280;
+    font-size: 1.1rem;
+}
+
+/* 分页样式 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pagination-list {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination-link {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #40916c;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.pagination-link:hover {
+    background-color: #f0fff4;
+    border-color: #40916c;
+}
+
+.pagination-link.active {
+    background-color: #40916c;
+    color: white;
+    border-color: #40916c;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .article-list {
+        padding: 15px;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .article-title {
+        font-size: 1.3rem;
+    }
+    
+    .pagination-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .pagination-link {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}

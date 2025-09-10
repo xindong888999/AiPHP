@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP请求方法不支持</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #151515 0%, #000000 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(41, 128, 185, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(155, 89, 182, 0.1) 0%, transparent 20%);
+            z-index: 1;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(30, 30, 40, 0.85);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba(255, 255, 255, 0.05),
+                0 0 30px rgba(52, 152, 219, 0.2);
+            max-width: 600px;
+            width: 90%;
+            backdrop-filter: blur(15px);
+            position: relative;
+            z-index: 2;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .error-icon {
+            font-size: 80px;
+            margin-bottom: 25px;
+            background: linear-gradient(135deg, #3498db, #9b59b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            background: linear-gradient(135deg, #fff, #ddd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            color: #ccc;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .method-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            margin: 10px 0;
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3); }
+            to { box-shadow: 0 5px 25px rgba(231, 76, 60, 0.6); }
+        }
+
+        .home-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            margin: 20px 0 40px;
+            box-shadow: 0 10px 25px rgba(52, 152, 219, 0.3);
+        }
+
+        .home-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(52, 152, 219, 0.4);
+            background: linear-gradient(135deg, #3ca0db, #2c8bc9);
+        }
+
+        .home-button:active {
+            transform: translateY(-1px);
+        }
+
+        .info-section {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .info-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #3498db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: left;
+        }
+
+        .info-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .info-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .info-item i {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #9b59b6;
+        }
+
+        .info-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .info-item p {
+            font-size: 0.9rem;
+            color: #aaa;
+            line-height: 1.5;
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+                margin: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(52, 152, 219, 0.3);
+            border-radius: 50%;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(20px, 20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <div class="container">
+        <div class="error-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        
+        <h1>HTTP请求方法不支持</h1>
+        
+        <div class="description">
+            <p>抱歉，您使用的 HTTP 请求方法 <span class="method-tag" id="method">UNKNOWN</span> 不被当前服务器支持。</p>
+            <p>这通常是由于服务器安全配置或技术限制导致的。</p>
+        </div>
+        
+        <a href="/" class="home-button">
+            <i class="fas fa-home"></i> 返回首页
+        </a>
+        
+        <div class="info-section">
+            <h3><i class="fas fa-info-circle"></i> 帮助信息</h3>
+            
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="fas fa-globe"></i>
+                    <h4>常见方法</h4>
+                    <p>Web通常使用GET和POST方法，其他方法需要特殊配置支持。</p>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>安全考虑</h4>
+                    <p>出于安全原因，服务器可能禁用了PUT、DELETE等方法。</p>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-cogs"></i>
+                    <h4>技术限制</h4>
+                    <p>某些Web服务器默认不支持所有HTTP方法。</p>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-code"></i>
+                    <h4>开发者</h4>
+                    <p>检查服务器配置或使用标准的GET/POST方法。</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>HTTP Method Not Allowed Handler &copy; 2023</p>
+        </div>
+    </div>
+
+    <script>
+        // 创建动态粒子背景
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 20;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // 随机大小
+                const size = Math.random() * 10 + 2;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // 随机位置
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                // 随机动画延迟
+                particle.style.animationDelay = `${Math.random() * 5}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        // 获取实际的请求方法并显示
+        function displayRequestMethod() {
+            // 尝试从URL参数获取方法名
+            const urlParams = new URLSearchParams(window.location.search);
+            const method = urlParams.get('method') || 'UNKNOWN';
+            
+            document.getElementById('method').textContent = method;
+        }
+        
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function() {
+            createParticles();
+            displayRequestMethod();
+        });
+    </script>
+</body>
+</html>

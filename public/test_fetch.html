@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch API Test</title>
+</head>
+<body>
+    <h1>Fetch API Test</h1>
+    <button onclick="testFetch()">Test Fetch</button>
+    <div id="result"></div>
+
+    <script>
+        function testFetch() {
+            const result = document.getElementById('result');
+            result.innerHTML = 'Testing...';
+            
+            // 产品模块已移除，这里不再有对应的API端点
+            result.innerHTML = '产品模块已移除，此测试不再有效';
+            .then(response => {
+                result.innerHTML = 'Response status: ' + response.status + '<br>';
+                return response.text();
+            })
+            .then(data => {
+                result.innerHTML += 'Response data: ' + data;
+            })
+            .catch(error => {
+                result.innerHTML = 'Error: ' + error.message;
+            });
+        }
+    </script>
+</body>
+</html>

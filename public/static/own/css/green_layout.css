@@ -1,0 +1,172 @@
+/* 绿色主题布局的CSS文件 */
+
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8fff8;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 页面头部样式 */
+.green-header {
+    background: linear-gradient(135deg, #2d6a4f 0%, #40916c 100%);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 主要内容区域样式 */
+.green-main {
+    padding: 2rem 0;
+    min-height: calc(100vh - 280px);
+}
+
+.green-main h1, .green-main h2, .green-main h3 {
+    color: #2d6a4f;
+    margin-bottom: 1rem;
+}
+
+.green-main h1 {
+    font-size: 2rem;
+}
+
+.green-main h2 {
+    font-size: 1.6rem;
+}
+
+.green-main h3 {
+    font-size: 1.3rem;
+}
+
+.green-main p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.green-main ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.green-main a {
+
+    text-decoration: none;
+}
+
+.green-main a:hover {
+    text-decoration: underline;
+}
+
+/* 页面底部样式 */
+.green-footer {
+    background: linear-gradient(135deg, #2d6a4f 0%, #40916c 100%);
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-info h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    display: block;
+    padding: 0.3rem 0;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .green-main h1 {
+        font-size: 1.8rem;
+    }
+    
+    .green-main h2 {
+        font-size: 1.4rem;
+    }
+    
+    .green-main h3 {
+        font-size: 1.2rem;
+    }
+}

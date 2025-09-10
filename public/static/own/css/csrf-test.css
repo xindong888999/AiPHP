@@ -1,0 +1,176 @@
+
+/* 演示区域样式 */
+.demo-section {
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #fafafa;
+    border: 1px solid #e0e0e0;
+}
+
+.demo-section h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.demo-section p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* 表单样式 */
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+/* 按钮样式 */
+button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #357abd;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #218838;
+    transform: translateY(-1px);
+}
+
+/* 代码示例样式 */
+.code-example {
+    margin-top: 25px;
+}
+
+.code-example h3 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+pre {
+    background-color: #2d2d2d;
+    color: #e6e6e6;
+    padding: 20px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+code {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+/* AJAX演示样式 */
+.ajax-demo {
+    background-color: white;
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+#ajaxButton {
+    margin-bottom: 15px;
+}
+
+#ajaxResult {
+    min-height: 40px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .demo-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .demo-section {
+        padding: 20px;
+    }
+    
+    form,
+    .ajax-demo {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .demo-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

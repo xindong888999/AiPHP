@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "docs": [
+    {
+      "id": "contracts",
+      "path": "docs/callable_contracts.md",
+      "priority": 10,
+      "description": "可调用契约约定：命名、页面变量、错误结构、静态资源命名"
+    },
+    {
+      "id": "flow",
+      "path": "docs/framework_flow.md",
+      "priority": 9,
+      "description": "框架流程：入口、引导、路由、页面、布局、资源"
+    },
+    {
+      "id": "prompts-master",
+      "path": "prompts/master_guidelines.md",
+      "priority": 8,
+      "description": "提示词总纲：提示词结构、规范与原则"
+    }
+  ]
+}
+
